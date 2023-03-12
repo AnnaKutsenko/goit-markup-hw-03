@@ -39,22 +39,23 @@ img {
 header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
-.cont {
+.header-cont {
     display: flex;
-
+    align-items: center;
 }
 
 .header-nav {
     display: flex;
-    gap: 76px;
+    align-items: center;
+    margin-right: auto;
 }
 
 .header-list {
     display: flex;
     gap: 40px;
-    margin-right: 332px;
 }
 
 .header-address-list {
@@ -72,6 +73,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
 }
 
 .accent {
@@ -114,9 +116,10 @@ header {
 /**---------Hero--------**/
 .hero {
     background: #2E2F42;
-
-    box-sizing: border-box;
     border-bottom: 1px solid #E7E9FC;
+    padding-top: 188px ;
+    padding-bottom: 188px;
+ 
 }
 
 .hero-title {
@@ -125,8 +128,6 @@ header {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding-top: 188px;
-    padding-bottom: 48px;
     margin: 0 auto;
     max-width: 496px;
 
@@ -142,9 +143,12 @@ header {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    margin: 48px auto 0;
     display: block;
-    padding: 16px 32px;
+    border-radius: 4px;
+    border-color: #4D5AE5
 }
 
 .hero-button:hover,
@@ -153,22 +157,24 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5x;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     background: #404BBF;
+    border-color: #404BBF;
 }
 
 /*-------------------*/
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
+    
 }
 
 .feat-list {
     display: flex;
-    gap: 24;
+    gap: 24px;
 }
 
 
@@ -178,6 +184,8 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
+    padding: 0 16px;
 }
 
 .list-text {
@@ -185,6 +193,16 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 0 16px;
+}
+
+.gal-list-btn {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center;
 }
 
 .gal-btn {
@@ -195,6 +213,7 @@ header {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     cursor: pointer;
+    padding: 12px 24px;
 }
 
 .gal-btn:hover,
@@ -212,12 +231,42 @@ header {
     color: #FFFFFF;
 }
 
+.gal-item-btn {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+}
+
+.gal-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.gal-item {
+    width: calc((100% - 48px) / 3); 
+    box-sizing: border-box
+    border: 1px solid #E7E9FC
+}
+
+.gal {
+    width: 360px;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC; 
+    padding-top: 32px; 
+    padding-bottom: 32px;
+}
+
 .widget {
     padding-bottom: 120px;
 }
 
 .section-list {
-    gap: 8px;
+    display: flex;
+    gap: 24px;
+    text-align: center;
 }
 
 .section-title {
@@ -227,6 +276,8 @@ header {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px;
+    padding-top: 120px;
 }
 
 .section-item {
@@ -235,11 +286,17 @@ header {
 
 .team {
     background: #F4F4FD;
+    padding-bottom: 120px;
 }
 
+.gallery {
+    padding-bottom: 120px
+}
 /*------Footer------*/
 .footer {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
@@ -250,6 +307,8 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    max-width: 264px;
+    margin-top: 16px;
 }
 
 .footer-accent {
