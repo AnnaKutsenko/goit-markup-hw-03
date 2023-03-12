@@ -97,7 +97,6 @@ header {
 
 .header-address {
     font-style: normal;
-    margin: auto;
 }
 
 .header-mail {
@@ -277,7 +276,6 @@ header {
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 72px;
-    padding-top: 120px;
 }
 
 .section-item {
