@@ -35,7 +35,7 @@ img {
     margin: 0 auto;
 }
 
-/**--------HEADER--------**/
+/**-----------HEADER-----------**/
 header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -45,6 +45,8 @@ header {
 .header-cont {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav {
@@ -112,7 +114,7 @@ header {
     color: #404bbf
 }
 
-/**---------Hero--------**/
+/**------------HERO-----------**/
 .hero {
     background: #2E2F42;
     border-bottom: 1px solid #E7E9FC;
@@ -146,8 +148,7 @@ header {
     height: 56px;
     margin: 48px auto 0;
     display: block;
-    border-radius: 4px;
-    border-color: #4D5AE5
+    border: none;
 }
 
 .hero-button:hover,
@@ -161,21 +162,19 @@ header {
     text-align: center;
     letter-spacing: 0.04em;
     background: #404BBF;
-    border-color: #404BBF;
 }
 
-/*-------------------*/
+/**----------------------**/
+
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
-    
 }
 
 .feat-list {
     display: flex;
     gap: 24px;
 }
-
 
 .list-title {
     font-weight: 500;
@@ -184,7 +183,6 @@ header {
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-    padding: 0 16px;
 }
 
 .list-text {
@@ -192,16 +190,16 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 0 16px;
+    width: 264px;
 }
 
 .gal-list-btn {
     display: flex;
     gap: 24px;
     align-items: center;
-    margin-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .gal-btn {
@@ -211,8 +209,13 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #4D5AE5;
+    background: #F4F4FD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     padding: 12px 24px;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
 }
 
 .gal-btn:hover,
@@ -228,12 +231,11 @@ header {
     letter-spacing: 0.04em;
     background: #404BBF;
     color: #FFFFFF;
+    border: none;
 }
 
 .gal-item-btn {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: 1px solid #E7E9FC;
+    
 }
 
 .gal-list {
@@ -256,10 +258,22 @@ header {
     border-left: 1px solid #E7E9FC; 
     padding-top: 32px; 
     padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.gallery {
+    padding-top: 96px;
+    padding-bottom: 120px
 }
 
 .widget {
     padding-bottom: 120px;
+}
+
+.team {
+    background: #F4F4FD;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .section-list {
@@ -282,15 +296,16 @@ header {
 
 }
 
-.team {
-    background: #F4F4FD;
-    padding-bottom: 120px;
+.section {
+    background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.gallery {
-    padding-bottom: 120px
-}
-/*------Footer------*/
+/**---------FOOTER---------**/
+
 .footer {
     background: #2E2F42;
     padding-top: 100px;
@@ -315,4 +330,4 @@ header {
     color: #F4F4FD
 }
 
-/*-------------------*/
+/**----------------------------**/
